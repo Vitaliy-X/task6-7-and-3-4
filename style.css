@@ -41,7 +41,7 @@
 
 body {
     background-color: var(--background-color-light);
-    font: 1rem MTSCompactMedium, MTS Sans;
+    font: 0.875rem MTSCompactMedium;
 }
 
 .main-header {
