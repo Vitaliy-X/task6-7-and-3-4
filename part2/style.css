@@ -1,34 +1,34 @@
 @font-face {
     font-family: "MTSCompactMedium";
-    src: url("/fonts/MTSCompact-Medium.CcTpAFTL.woff2") format("woff2");
+    src: url("/part2/fonts/MTSCompact-Medium.CcTpAFTL.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MTSCompactRegular";
-    src: url("/fonts/MTSCompact-Regular.wCKyQM0D.woff2") format("woff2");
+    src: url("/part2/fonts/MTSCompact-Regular.wCKyQM0D.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MTSTextMedium";
-    src: url("/fonts/MTSText-Medium.KuPeDsPN.woff2") format("woff2");
+    src: url("/part2/fonts/MTSText-Medium.KuPeDsPN.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MTSTextRegular";
-    src: url("/fonts/MTSText-Regular.C9IPA7iU.woff2") format("woff2");
+    src: url("/part2/fonts/MTSText-Regular.C9IPA7iU.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MTSWideMedium";
-    src: url("/fonts/MTSWide-Medium.DlDQCNK5.woff2") format("woff2");
+    src: url("/part2/fonts/MTSWide-Medium.DlDQCNK5.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -154,24 +154,11 @@ body {
     position: absolute;
 }
 
-.menu-list:has(.selection-button:checked),
-.menu-list:has(.selection-button:checked) ~ .mws-header {
-    background-color: white;
-}
-
-#menu-products:checked ~ .dropdown-menu {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    border-radius: 10px;
-    background-color: white;
-    margin-top: 20px;
-}
-
-.selection-button:checked + label {
+.active + label {
     color: red;
 }
 
-.selection-button:checked + label svg {
+.active + label svg {
     transform: rotate(-180deg);
     transition: transform 0.3s ease;
     padding: 0 3px 3px 0;
@@ -234,15 +221,6 @@ body {
 
 .mws-product-list {
     display: none;
-}
-
-.product-titles:has(#iaas:checked) ~ .mws-iaas-list,
-.product-titles:has(#saas:checked) ~ .mws-saas-list,
-.product-titles:has(#dbaas:checked) ~ .mws-dbaas-list,
-.product-titles:has(#secaas:checked) ~ .mws-secaas-list,
-.product-titles:has(#naas:checked) ~ .mws-naas-list,
-.product-titles:has(#ai:checked) ~ .mws-ai-list {
-    display: block;
 }
 
 .sidebar-content {
