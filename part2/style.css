@@ -141,6 +141,10 @@ body {
     }
 }
 
+.menu-item.active svg {
+    transform: rotate(-180deg);
+}
+
 .menu-item:hover {
     cursor: pointer;
     color: red;
@@ -154,14 +158,12 @@ body {
     position: absolute;
 }
 
-.active + label {
-    color: red;
-}
-
-.active + label svg {
-    transform: rotate(-180deg);
-    transition: transform 0.3s ease;
-    padding: 0 3px 3px 0;
+.dropdown-menu.active {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
 }
 
 .sidebar-menu {
@@ -221,6 +223,10 @@ body {
 
 .mws-product-list {
     display: none;
+}
+
+.mws-product-list.active {
+    display: block;
 }
 
 .sidebar-content {
